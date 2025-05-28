@@ -37,7 +37,7 @@ export default function Page() {
               <th>Starting temperature (℃)</th>
               <th>Final temperature (℃)</th>
               <th>Difference in temperature (℃)</th>
-              <th>Percent difference in mass (%)</th>
+              <th>Percent difference in temperature (%)</th>
             </tr>
           </thead>
           <tbody>
@@ -58,8 +58,8 @@ export default function Page() {
                 </td>
                 <td>{x}</td>
                 <td>{data.finalTemp[i]}</td>
-                <td>{x - data.finalTemp[i]}</td>
-                <td>{((x - data.finalTemp[i]) / x) * 100}</td>
+                <td>{data.finalTemp[i]-x}</td>
+                <td>{((data.finalTemp[i]-x) / x) * 100}</td>
               </tr>
             ))}
           </tbody>
