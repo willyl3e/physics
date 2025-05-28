@@ -40,7 +40,7 @@ export default function Page() {
           <span className="text-gray-500">Go back</span>
         </Link>
       </div>
-      <div className="m-20 grid grid-cols-2">
+      <div className="m-20 grid grid-cols-2 max-md:grid-cols-1">
         <div>
           {/* Slider Control */}
           <div className="mb-6">
